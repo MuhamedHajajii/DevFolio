@@ -33,6 +33,10 @@
   position: relative;
 }
 
+.offcanvas-body {
+  overflow-y : visible;
+}
+
 #navbar-example2 {
   background-color: rgba(0, 0, 0, 0.85);
 }
