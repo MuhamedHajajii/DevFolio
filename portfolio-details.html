@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="./css/styleSheel.css">
   <!-- Start Portfolio Detiles -->
   <link rel="stylesheet" href="./css/portfolio-details.css">
+    <!-- Start OwlCorousel  -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -50%"
@@ -115,24 +118,18 @@
       <div class="row g-5 ">
         <div class="col-12 col-lg-8 mb-4 mb-lg-0 carousel p-0 ">
           <div id="detiles-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./images/portfolio-details-1.jpg" class="d-block w-100" alt="portfolio-details">
+            <div id="BlogSecondpage">
+              <div class="owl-carousel owl-theme">
+                <div class="carousel-item active">
+                  <img src="./images/portfolio-details-1.jpg" class="d-block w-100" alt="portfolio-details">
+                </div>
+                <div class="carousel-item active">
+                  <img src="./images/portfolio-details-2.jpg" class="d-block w-100" alt="portfolio-details">
+                </div>
+                <div class="carousel-item active">
+                  <img src="./images/portfolio-details-3.jpg" class="d-block w-100" alt="portfolio-details">
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="./images/portfolio-details-2.jpg" class="d-block w-100" alt="portfolio-details">
-              </div>
-              <div class="carousel-item">
-                <img src="./images/portfolio-details-3.jpg" class="d-block w-100" alt="portfolio-details">
-              </div>
-            </div>
-            <div class="carousel-indicators m-0">
-              <button type="button" data-bs-target="#detiles-carousel" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#detiles-carousel" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#detiles-carousel" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#detiles-carousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -175,7 +172,15 @@
   </section>
   <!-- End Footer Sction -->
 
+  <!-- Start BootStrap  -->
   <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- Start jquery  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Start OwlCarousel  -->
+  <script src="./js/owl.carousel.min.js"></script>
+  <!-- Start Main js  -->
+  <script src="./js/Mainjs.js"></script>
+
 </body>
 
 </html>

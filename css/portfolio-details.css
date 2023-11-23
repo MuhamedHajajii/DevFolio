@@ -101,3 +101,9 @@
 }
 
 /* End product */
+
+
+#BlogSecondpage .owl-carousel img {
+  width: 100% !important;
+  height: auto !important;
+}

@@ -16,6 +16,10 @@
   margin: auto;
 }
 
+.owl-carousel .owl-item img {
+  width: auto !important ;
+}
+
 #services .section-title {
   position: relative;
   content: "";
@@ -26,7 +30,67 @@
   margin: auto;
 }
 
-/* Start Global Variables  */
+/* End Global Variables  */
+
+
+
+
+/* Start OwlCarousel */
+
+
+#innerBlog .carousel-item img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+
+
+
+/*
+
+
+Method ONe to do the active change color
+
+
+*/
+/* .owl-carousel:has(button:first-child.owl-dot.active) button.owl-dot:first-child {
+
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+.owl-carousel:has(button:last-child.owl-dot.active) button.owl-dot:last-child {
+
+  background-color: rgba(255, 255, 255, 1) !important;
+
+
+} */
+/* 
+
+Method Two
+
+*/
+
+
+.owl-carousel {
+  cursor: grab;
+}
+
+.owl-carousel button.owl-dot.active {
+
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+.owl-carousel button.owl-dot {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  position: static;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+/* End OwlCarousel */
+
 /* Start Global */
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   background-color: transparent;
@@ -34,7 +98,7 @@
 }
 
 .offcanvas-body {
-  overflow-y : visible;
+  overflow-y : visible !important;
 }
 
 #navbar-example2 {
