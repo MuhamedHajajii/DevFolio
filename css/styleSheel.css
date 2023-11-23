@@ -1,0 +1,2551 @@
+/* Start Global Variables  */
+
+:root {
+  --mainColor: #0078ff;
+}
+.fs-3rem {
+  font-size: 3rem;
+}
+.section-title {
+  position: relative;
+  content: "";
+  height: 4px;
+  background-color: var(--mainColor);
+  bottom: -12px;
+  width: 40px;
+  margin: auto;
+}
+
+#services .section-title {
+  position: relative;
+  content: "";
+  height: 4px;
+  background-color: var(--mainColor);
+  bottom: -12px;
+  width: 40px;
+  margin: auto;
+}
+
+/* Start Global Variables  */
+/* Start Global */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: transparent;
+  position: relative;
+}
+
+#navbar-example2 {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+@media screen and (min-width: 993px) {
+  .offcanvas-body ul li {
+    position: relative;
+  }
+  
+  .offcanvas-body ul div {
+    position: absolute;
+    bottom: -2px;
+    left: 5px;
+    width: 0px;
+    height: 3px ;
+    background-color: #cde1f8;
+    transition: 0.3s;
+  }
+  
+  .offcanvas-body ul li:hover div {
+    position: absolute;
+    bottom: -2px;
+    left: 5px;
+    width: 80%;
+    height: 3px ;
+    background-color: #cde1f8;
+  }
+  
+}
+@media screen and (max-width: 992px) {
+  .offcanvas-body ul li {
+    position: relative;
+  }
+  
+  .offcanvas-body ul div {
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    width: 0px;
+    height: 3px ;
+    background-color: #000000;
+    transition: 0.3s;
+  }
+  
+  .offcanvas-body ul li:hover div {
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    width: 50px;
+    height: 3px ;
+    background-color: #000000;
+  }
+  
+}
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+}
+/* Drop Down */
+
+
+@media screen and (max-width: 991px) {
+  .offcanvas-body a {
+    color: black !important;
+  }
+
+  .offcanvas-backdrop {
+    background-color: rgba(255, 255, 255, 0.483);
+  }
+  
+  .offcanvas.offcanvas-end {
+    transform: translateX(0);
+  }
+
+  .offcanvas.offcanvas-end {
+    top: 10%;
+    right: 10%;
+    left: 10%;
+    bottom: 10%;
+    width: auto;
+    border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+}
+.offcanvas {
+  transition: 0s !important;
+}
+
+
+  .nav-item.dropdown > ul {
+    position: absolute !important;
+    opacity: 0;
+    display: block;
+    visibility: hidden;
+    transform: rotatex(90deg) translatey(17px);
+    transition: all 0.3s;
+    transform-origin: center top;
+  }
+
+  .nav-item.dropdown:hover > ul {
+    visibility: visible;
+    position: absolute;
+    transform:rotatex(0deg) translatey(5px);
+    opacity: 1;
+  }
+  .nav-item.dropend ul {
+    position: absolute !important;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: rotatex(90deg)  translatex(-20px);
+    transition: all 0.3s;
+    transform-origin: top ;
+    left: 100%;
+    top: 50%;
+  }
+  .nav-item.dropend:hover ul {
+    position: absolute;
+    visibility: visible;
+    transform:rotatex(0deg) translatex(0px);
+    opacity: 1;
+  }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1549px) {
+  .nav-item.dropdown > ul {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translatey(8px);
+    transition: all 0.3s;
+  }
+
+  .nav-item.dropdown:hover > ul {
+    visibility: visible;
+    display: block;
+    transform: translatey(2px);
+    opacity: 1;
+  }
+  .nav-item.dropend ul {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    /* transform: translatex(20px); */
+    transition: all 0.3s;
+    position: absolute;
+    right: 100%;
+    top: 0;
+  }
+  .nav-item.dropend:hover ul {
+    display: block;
+    visibility: visible;
+    /* transform: translatex(0px); */
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 1550px) {
+  .nav-item.dropdown > ul {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translatey(17px);
+    transition: all 0.3s;
+  }
+
+  .nav-item.dropdown:hover > ul {
+    visibility: visible;
+    transform: translatey(5px);
+    opacity: 1;
+  }
+  .nav-item.dropend ul {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translatex(-20px);
+    transition: all 0.3s;
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+  .nav-item.dropend:hover ul {
+    visibility: visible;
+    transform: translatex(0px);
+    opacity: 1;
+  }
+}
+
+.nav-item.dropend a:hover,
+.nav-item.dropdown a:hover,
+.nav-item.dropend span:nth-child(1):hover,
+.nav-item.dropend span:nth-child(1) a:hover {
+  color: var(--mainColor);
+}
+
+.nav-item.dropend a,
+.nav-item.dropdown a,
+.nav-item.dropend span:nth-child(1),
+.nav-item.dropend span:nth-child(1) a {
+  font-weight: 400;
+  transition:all 0.3s;
+}
+
+/* Drop Down */
+
+@media screen and (min-width: 992px) {
+  .nav-pills .nav-link:before, .nav-pills .show::before{
+    transition: 0.7s;
+    content: '';
+    height: 3px;
+    width: 0;
+    bottom: -2px;
+    left: 0;
+    background-color: #cde1f8;
+    position: relative;
+  
+  }
+  
+  .nav-pills .nav-link.active::before, .nav-pills .show > .nav-link::before{
+    content: '';
+    height: 3px;
+    width: 80%;
+    bottom: -2px;
+    left: 0;
+    position: absolute;
+    background-color: #cde1f8;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-pills .nav-link:before, .nav-pills .show::before{
+    transition: 0s;
+    content: '';
+    height: 3px;
+    width: 0;
+    bottom: -2px;
+    left: 0;
+    background-color: #000000;
+    position: relative;
+  
+  }
+  
+  .offcanvas.offcanvas-end {
+    border: 0;
+  }
+
+  .offcanvas {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 756px 3px black;
+  }
+
+  .nav-pills .nav-link.active::before, .nav-pills .show > .nav-link::before{
+    content: '';
+    height: 3px;
+    width: 50px;
+    bottom: -2px;
+    left: 0;
+    position: absolute;
+    background-color: #000000;
+  }
+  .offcanvas-body ul li {
+    width: max-content;
+  }
+}
+
+.main-btn {
+  position: fixed;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #0078ff;
+  color: white;
+  bottom: 15px;
+  right: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;align-items: center;
+  font-size: 20px;
+  font-weight: 900;
+}
+@media screen and (max-width: 992px) {
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  ::-webkit-scrollbar-track{
+    display: none;
+  }
+  ::-webkit-scrollbar-thumb{
+    display: none;
+  }
+}
+
+#about
+,#services
+,#counter
+,#portoflio
+,#work
+,#blog
+,#contact
+  {
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+
+/* End Global */
+/* Start Hero Section  */
+.hero-section .navbar {
+  z-index: 5000000;
+}
+
+.hero-section {
+  background-image: url("../images/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+#head div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#head h2::before {
+  content: "";
+  animation-name: animatename;
+  animation-duration: 13s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#head h2::after {
+  content: "";
+  animation-name: before;
+  animation-duration: 13s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes before {
+  0% {
+    content: "|";
+    opacity: 1;
+  }
+  1% {
+    content: "|";
+    opacity: 1;
+  }
+  2% {
+    content: "|";
+    opacity: 1;
+  }
+  3% {
+    content: "|";
+    opacity: 1;
+  }
+  4% {
+    content: "|";
+    opacity: 1;
+  }
+  5% {
+    content: "|";
+    opacity: 1;
+  }
+  6% {
+    content: "|";
+    opacity: 1;
+  }
+  7% {
+    content: "|";
+    opacity: 1;
+  }
+  8% {
+    content: "|";
+    opacity: 0.5;
+  }
+  9% {
+    content: "|";
+    opacity: 1;
+  }
+  10% {
+    content: "|";
+    opacity: 0.5;
+  }
+  11% {
+    content: "|";
+    opacity: 1;
+  }
+  12% {
+    content: "|";
+    opacity: 0.5;
+  }
+  13% {
+    content: "|";
+    opacity: 1;
+  }
+  14% {
+    content: "|";
+    opacity: 1;
+  }
+  15% {
+    content: "|";
+    opacity: 1;
+  }
+  16% {
+    content: "|";
+    opacity: 1;
+  }
+  17% {
+    content: "|";
+    opacity: 1;
+  }
+  18% {
+    content: "|";
+    opacity: 1;
+  }
+  19% {
+    content: "|";
+    opacity: 1;
+  }
+  20% {
+    content: "|";
+    opacity: 1;
+  }
+  21% {
+    content: "|";
+    opacity: 1;
+  }
+  22% {
+    content: "|";
+    opacity: 1;
+  }
+  23% {
+    content: "|";
+    opacity: 1;
+  }
+  24% {
+    content: "|";
+    opacity: 1;
+  }
+  25% {
+    content: "|";
+    opacity: 1;
+  }
+  26% {
+    content: "|";
+    opacity: 1;
+  }
+  27% {
+    content: "|";
+    opacity: 1;
+  }
+  28% {
+    content: "|";
+    opacity: 1;
+  }
+  29% {
+    content: "|";
+    opacity: 1;
+  }
+  30% {
+    content: "|";
+    opacity: 1;
+  }
+  31% {
+    content: "|";
+    opacity: 0.5;
+  }
+  32% {
+    content: "|";
+    opacity: 1;
+  }
+  33% {
+    content: "|";
+    opacity: 0.5;
+  }
+  34% {
+    content: "|";
+    opacity: 1;
+  }
+  35% {
+    content: "|";
+    opacity: 0.5;
+  }
+  36% {
+    content: "|";
+    opacity: 1;
+  }
+  37% {
+    content: "|";
+    opacity: 1;
+  }
+  38% {
+    content: "|";
+    opacity: 1;
+  }
+  39% {
+    content: "|";
+    opacity: 1;
+  }
+  40% {
+    content: "|";
+    opacity: 1;
+  }
+  41% {
+    content: "|";
+    opacity: 1;
+  }
+  42% {
+    content: "|";
+    opacity: 1;
+  }
+  43% {
+    content: "|";
+    opacity: 1;
+  }
+  44% {
+    content: "|";
+    opacity: 1;
+  }
+  45% {
+    content: "|";
+    opacity: 1;
+  }
+  46% {
+    content: "|";
+    opacity: 1;
+  }
+  47% {
+    content: "|";
+    opacity: 1;
+  }
+  48% {
+    content: "|";
+    opacity: 1;
+  }
+  49% {
+    content: "|";
+    opacity: 1;
+  }
+  50% {
+    content: "|";
+    opacity: 1;
+  }
+  51% {
+    content: "|";
+    opacity: 1;
+  }
+  52% {
+    content: "|";
+    opacity: 1;
+  }
+  53% {
+    content: "|";
+    opacity: 1;
+  }
+  54% {
+    content: "|";
+    opacity: 1;
+  }
+  55% {
+    content: "|";
+    opacity: 1;
+  }
+  56% {
+    content: "|";
+    opacity: 1;
+  }
+  57% {
+    content: "|";
+    opacity: 0.5;
+  }
+  58% {
+    content: "|";
+    opacity: 1;
+  }
+  59% {
+    content: "|";
+    opacity: 0.5;
+  }
+  60% {
+    content: "|";
+    opacity: 1;
+  }
+  61% {
+    content: "|";
+    opacity: 0.5;
+  }
+  62% {
+    content: "|";
+    opacity: 1;
+  }
+  63% {
+    content: "|";
+    opacity: 1;
+  }
+  64% {
+    content: "|";
+    opacity: 1;
+  }
+  65% {
+    content: "|";
+    opacity: 1;
+  }
+  66% {
+    content: "|";
+    opacity: 1;
+  }
+  67% {
+    content: "|";
+    opacity: 1;
+  }
+  68% {
+    content: "|";
+    opacity: 1;
+  }
+  69% {
+    content: "|";
+    opacity: 1;
+  }
+  70% {
+    content: "|";
+    opacity: 1;
+  }
+  71% {
+    content: "|";
+    opacity: 1;
+  }
+  72% {
+    content: "|";
+    opacity: 1;
+  }
+  73% {
+    content: "|";
+    opacity: 1;
+  }
+  74% {
+    content: "|";
+    opacity: 1;
+  }
+  75% {
+    content: "|";
+    opacity: 1;
+  }
+  76% {
+    content: "|";
+    opacity: 1;
+  }
+  77% {
+    content: "|";
+    opacity: 1;
+  }
+  78% {
+    content: "|";
+    opacity: 1;
+  }
+  79% {
+    content: "|";
+    opacity: 1;
+  }
+  80% {
+    content: "|";
+    opacity: 1;
+  }
+  81% {
+    content: "|";
+    opacity: 1;
+  }
+  82% {
+    content: "|";
+    opacity: 1;
+  }
+  83% {
+    content: "|";
+    opacity: 1;
+  }
+  84% {
+    content: "|";
+    opacity: 1;
+  }
+  85% {
+    content: "|";
+    opacity: 0.5;
+  }
+  86% {
+    content: "|";
+    opacity: 1;
+  }
+  87% {
+    content: "|";
+    opacity: 0.5;
+  }
+  88% {
+    content: "|";
+    opacity: 1;
+  }
+  89% {
+    content: "|";
+    opacity: 0.5;
+  }
+  90% {
+    content: "|";
+    opacity: 1;
+  }
+  91% {
+    content: "|";
+    opacity: 1;
+  }
+  92% {
+    content: "|";
+    opacity: 1;
+  }
+  93% {
+    content: "|";
+    opacity: 1;
+  }
+  94% {
+    content: "|";
+    opacity: 1;
+  }
+  95% {
+    content: "|";
+    opacity: 1;
+  }
+  96% {
+    content: "|";
+    opacity: 1;
+  }
+  97% {
+    content: "|";
+    opacity: 1;
+  }
+  98% {
+    content: "|";
+    opacity: 1;
+  }
+  99% {
+    content: "|";
+    opacity: 1;
+  }
+  100% {
+    content: "|";
+    opacity: 1;
+  }
+}
+
+@keyframes animatename {
+  0% {
+    content: "D";
+  }
+  1% {
+    content: "De";
+  }
+  2% {
+    content: "Dev";
+  }
+  3% {
+    content: "Deve";
+  }
+  4% {
+    content: "Devel";
+  }
+  5% {
+    content: "Develo";
+  }
+  6% {
+    content: "Develop";
+  }
+  7% {
+    content: "Develope";
+  }
+  8% {
+    content: "Developer";
+  }
+  9% {
+    content: "Developer";
+  }
+  10% {
+    content: "Developer";
+  }
+  11% {
+    content: "Developer";
+  }
+  12% {
+    content: "Developer";
+  }
+  13% {
+    content: "Developer";
+  }
+  14% {
+    content: "Developer";
+  }
+  15% {
+    content: "Developer";
+  }
+  16% {
+    content: "Develope";
+  }
+  17% {
+    content: "Develop";
+  }
+  18% {
+    content: "Develo";
+  }
+  19% {
+    content: "Devel";
+  }
+  20% {
+    content: "Deve";
+  }
+  21% {
+    content: "Dev";
+  }
+  22% {
+    content: "De";
+  }
+  23% {
+    content: "D";
+  }
+  24% {
+    content: "D";
+  }
+  25% {
+    content: "De";
+  }
+  26% {
+    content: "Des";
+  }
+  27% {
+    content: "Desi";
+  }
+  28% {
+    content: "Desig";
+  }
+  29% {
+    content: "Design";
+  }
+  30% {
+    content: "Designe";
+  }
+  31% {
+    content: "Designer";
+  }
+  32% {
+    content: "Designer";
+  }
+  33% {
+    content: "Designer";
+  }
+  34% {
+    content: "Designer";
+  }
+  35% {
+    content: "Designer";
+  }
+  36% {
+    content: "Designer";
+  }
+  37% {
+    content: "Designer";
+  }
+  38% {
+    content: "Designer";
+  }
+  39% {
+    content: "Designe";
+  }
+  40% {
+    content: "Design";
+  }
+  41% {
+    content: "Desig";
+  }
+  42% {
+    content: "Desi";
+  }
+  43% {
+    content: "Des";
+  }
+  44% {
+    content: "De";
+  }
+  45% {
+    content: "D";
+  }
+  46% {
+    content: "P";
+  }
+  47% {
+    content: "Ph";
+  }
+  48% {
+    content: "Phot";
+  }
+  49% {
+    content: "Photo";
+  }
+  50% {
+    content: "Photog";
+  }
+  51% {
+    content: "Photogr";
+  }
+  52% {
+    content: "Photogra";
+  }
+  53% {
+    content: "Photograp";
+  }
+  54% {
+    content: "Photograph";
+  }
+  55% {
+    content: "Photographe";
+  }
+  56% {
+    content: "Photographer";
+  }
+  57% {
+    content: "Photographer";
+  }
+  58% {
+    content: "Photographer";
+  }
+  59% {
+    content: "Photographer";
+  }
+  60% {
+    content: "Photographer";
+  }
+  61% {
+    content: "Photographer";
+  }
+  62% {
+    content: "Photographer";
+  }
+  63% {
+    content: "Photographer";
+  }
+  64% {
+    content: "Photographer";
+  }
+  65% {
+    content: "Photographer";
+  }
+  66% {
+    content: "Photographer";
+  }
+  67% {
+    content: "Photograph";
+  }
+  68% {
+    content: "Photograp";
+  }
+  69% {
+    content: "Photogra";
+  }
+  70% {
+    content: "Photogr";
+  }
+  71% {
+    content: "Photog";
+  }
+  72% {
+    content: "Photo";
+  }
+  73% {
+    content: "Phot";
+  }
+  74% {
+    content: "Ph";
+  }
+  75% {
+    content: "P";
+  }
+  76% {
+    content: "F";
+  }
+  77% {
+    content: "Fr";
+  }
+  78% {
+    content: "Fre";
+  }
+  79% {
+    content: "Free";
+  }
+  80% {
+    content: "Freel";
+  }
+  81% {
+    content: "Freela";
+  }
+  82% {
+    content: "Freelan";
+  }
+  83% {
+    content: "Freelanc";
+  }
+  84% {
+    content: "Freelance";
+  }
+  85% {
+    content: "Freelancer";
+  }
+  86% {
+    content: "Freelancer";
+  }
+  87% {
+    content: "Freelancer";
+  }
+  88% {
+    content: "Freelancer";
+  }
+  89% {
+    content: "Freelancer";
+  }
+  90% {
+    content: "Freelancer";
+  }
+  91% {
+    content: "Freelancer";
+  }
+  92% {
+    content: "Freelance";
+  }
+  93% {
+    content: "Freelanc";
+  }
+  94% {
+    content: "Freelan";
+  }
+  95% {
+    content: "Freela";
+  }
+  96% {
+    content: "Freel";
+  }
+  97% {
+    content: "Free";
+  }
+  98% {
+    content: "Fre";
+  }
+  99% {
+    content: "Fr";
+  }
+  100% {
+    content: "F";
+  }
+}
+
+.hero-section div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 800px ) {
+  #head h1 {
+    font-size: 48px;
+    width: 350px;
+  }
+  #head h2 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 801px ) {
+  #head h1 {
+    font-size: 72px;
+    min-width: max-content;
+  }
+  #head h2 {
+    font-size: 40px;
+  }
+}
+
+/* End Hero Section  */
+
+/* Start About */
+.progress-85 {
+  width: 85%;
+}
+.progress-90 {
+  width: 90%;
+}
+.about .about h2 span {
+  position: relative;
+}
+.about .about h2 span::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #0078ff;
+  bottom: -12px;
+  width: 100%;
+}
+
+/* End About */
+
+/* Start Services Section */
+
+.icon-services {
+  font-size: 40px;
+  width: 115px;
+  height: 115px;
+  margin: 0 auto 10px;
+  background-color: #0078ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+}
+
+.icon-services div {
+  background-color: white;
+  width: 95px;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+#services .services-hov div:hover .icon-services div {
+  background-color: #0078ff;
+  color: white;
+}
+
+#services .services-hov div:hover .icon-services {
+  background-color: #cde1f8;
+}
+
+/* End Services Section */
+
+/* Start Counter Section  */
+#counter {
+  background-image: url("../images/counters-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+}
+
+#counter .icon-section div {
+  background-color: transparent;
+  font-size: 32px;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 10px;
+  color: #cde1f8;
+  border: 10px solid #cde1f8;
+  border-radius: 50%;
+}
+
+#counter .inner-bg {
+  background-color: rgba(0, 119, 255, 0.7);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+#navbar-example2 li.counter {
+  display: none;
+}
+/* Start Animation */
+/* Start Animation 1 */
+:has(a.services.active) #counter .row .col-12:first-child h5:after {
+  animation-play-state: running;
+}
+
+#counter .row .col-12:first-child h5::after {
+  content: "450";
+  animation: counter;
+  animation-duration: 1s;
+  animation-play-state: paused ;
+}
+
+@keyframes counter {
+
+  0.221729490022173%{content: "0";}
+  0.443458980044346%{content: "1";}
+  0.665188470066519%{content: "2";}
+  0.886917960088692%{content: "3";}
+  1.10864745011086%{content: "4";}
+  1.33037694013304%{content: "5";}
+  1.55210643015521%{content: "6";}
+  1.77383592017738%{content: "7";}
+  1.99556541019956%{content: "8";}
+  2.21729490022173%{content: "9";}
+  2.4390243902439%{content: "10";}
+  2.66075388026608%{content: "11";}
+  2.88248337028825%{content: "12";}
+  3.10421286031042%{content: "13";}
+  3.32594235033259%{content: "14";}
+  3.54767184035477%{content: "15";}
+  3.76940133037694%{content: "16";}
+  3.99113082039911%{content: "17";}
+  4.21286031042129%{content: "18";}
+  4.43458980044346%{content: "19";}
+  4.65631929046563%{content: "20";}
+  4.8780487804878%{content: "21";}
+  5.09977827050998%{content: "22";}
+  5.32150776053215%{content: "23";}
+  5.54323725055432%{content: "24";}
+  5.7649667405765%{content: "25";}
+  5.98669623059867%{content: "26";}
+  6.20842572062084%{content: "27";}
+  6.43015521064302%{content: "28";}
+  6.65188470066519%{content: "29";}
+  6.87361419068736%{content: "30";}
+  7.09534368070953%{content: "31";}
+  7.31707317073171%{content: "32";}
+  7.53880266075388%{content: "33";}
+  7.76053215077605%{content: "34";}
+  7.98226164079823%{content: "35";}
+  8.2039911308204%{content: "36";}
+  8.42572062084257%{content: "37";}
+  8.64745011086475%{content: "38";}
+  8.86917960088692%{content: "39";}
+  9.09090909090909%{content: "40";}
+  9.31263858093127%{content: "41";}
+  9.53436807095344%{content: "42";}
+  9.75609756097561%{content: "43";}
+  9.97782705099779%{content: "44";}
+  10.19955654102%{content: "45";}
+  10.4212860310421%{content: "46";}
+  10.6430155210643%{content: "47";}
+  10.8647450110865%{content: "48";}
+  11.0864745011087%{content: "49";}
+  11.3082039911308%{content: "50";}
+  11.529933481153%{content: "51";}
+  11.7516629711752%{content: "52";}
+  11.9733924611974%{content: "53";}
+  12.1951219512195%{content: "54";}
+  12.4168514412417%{content: "55";}
+  12.6385809312639%{content: "56";}
+  12.860310421286%{content: "57";}
+  13.0820399113082%{content: "58";}
+  13.3037694013304%{content: "59";}
+  13.5254988913526%{content: "60";}
+  13.7472283813747%{content: "61";}
+  13.9689578713969%{content: "62";}
+  14.1906873614191%{content: "63";}
+  14.4124168514413%{content: "64";}
+  14.6341463414634%{content: "65";}
+  14.8558758314856%{content: "66";}
+  15.0776053215078%{content: "67";}
+  15.29933481153%{content: "68";}
+  15.5210643015521%{content: "69";}
+  15.7427937915743%{content: "70";}
+  15.9645232815965%{content: "71";}
+  16.1862527716187%{content: "72";}
+  16.4079822616408%{content: "73";}
+  16.629711751663%{content: "74";}
+  16.8514412416852%{content: "75";}
+  17.0731707317074%{content: "76";}
+  17.2949002217295%{content: "77";}
+  17.5166297117517%{content: "78";}
+  17.7383592017739%{content: "79";}
+  17.960088691796%{content: "80";}
+  18.1818181818182%{content: "81";}
+  18.4035476718404%{content: "82";}
+  18.6252771618626%{content: "83";}
+  18.8470066518847%{content: "84";}
+  19.0687361419069%{content: "85";}
+  19.2904656319291%{content: "86";}
+  19.5121951219513%{content: "87";}
+  19.7339246119734%{content: "88";}
+  19.9556541019956%{content: "89";}
+  20.1773835920178%{content: "90";}
+  20.39911308204%{content: "91";}
+  20.6208425720621%{content: "92";}
+  20.8425720620843%{content: "93";}
+  21.0643015521065%{content: "94";}
+  21.2860310421287%{content: "95";}
+  21.5077605321508%{content: "96";}
+  21.729490022173%{content: "97";}
+  21.9512195121952%{content: "98";}
+  22.1729490022173%{content: "99";}
+  22.3946784922395%{content: "100";}
+  22.6164079822617%{content: "101";}
+  22.8381374722839%{content: "102";}
+  23.059866962306%{content: "103";}
+  23.2815964523282%{content: "104";}
+  23.5033259423504%{content: "105";}
+  23.7250554323726%{content: "106";}
+  23.9467849223947%{content: "107";}
+  24.1685144124169%{content: "108";}
+  24.3902439024391%{content: "109";}
+  24.6119733924613%{content: "110";}
+  24.8337028824834%{content: "111";}
+  25.0554323725056%{content: "112";}
+  25.2771618625278%{content: "113";}
+  25.49889135255%{content: "114";}
+  25.7206208425721%{content: "115";}
+  25.9423503325943%{content: "116";}
+  26.1640798226165%{content: "117";}
+  26.3858093126386%{content: "118";}
+  26.6075388026608%{content: "119";}
+  26.829268292683%{content: "120";}
+  27.0509977827052%{content: "121";}
+  27.2727272727273%{content: "122";}
+  27.4944567627495%{content: "123";}
+  27.7161862527717%{content: "124";}
+  27.9379157427939%{content: "125";}
+  28.159645232816%{content: "126";}
+  28.3813747228382%{content: "127";}
+  28.6031042128604%{content: "128";}
+  28.8248337028826%{content: "129";}
+  29.0465631929047%{content: "130";}
+  29.2682926829269%{content: "131";}
+  29.4900221729491%{content: "132";}
+  29.7117516629713%{content: "133";}
+  29.9334811529934%{content: "134";}
+  30.1552106430156%{content: "135";}
+  30.3769401330378%{content: "136";}
+  30.59866962306%{content: "137";}
+  30.8203991130821%{content: "138";}
+  31.0421286031043%{content: "139";}
+  31.2638580931265%{content: "140";}
+  31.4855875831486%{content: "141";}
+  31.7073170731708%{content: "142";}
+  31.929046563193%{content: "143";}
+  32.1507760532152%{content: "144";}
+  32.3725055432373%{content: "145";}
+  32.5942350332595%{content: "146";}
+  32.8159645232817%{content: "147";}
+  33.0376940133038%{content: "148";}
+  33.259423503326%{content: "149";}
+  33.4811529933482%{content: "150";}
+  33.7028824833704%{content: "151";}
+  33.9246119733925%{content: "152";}
+  34.1463414634147%{content: "153";}
+  34.3680709534369%{content: "154";}
+  34.589800443459%{content: "155";}
+  34.8115299334812%{content: "156";}
+  35.0332594235034%{content: "157";}
+  35.2549889135256%{content: "158";}
+  35.4767184035477%{content: "159";}
+  35.6984478935699%{content: "160";}
+  35.9201773835921%{content: "161";}
+  36.1419068736142%{content: "162";}
+  36.3636363636364%{content: "163";}
+  36.5853658536586%{content: "164";}
+  36.8070953436807%{content: "165";}
+  37.0288248337029%{content: "166";}
+  37.2505543237251%{content: "167";}
+  37.4722838137473%{content: "168";}
+  37.6940133037694%{content: "169";}
+  37.9157427937916%{content: "170";}
+  38.1374722838138%{content: "171";}
+  38.3592017738359%{content: "172";}
+  38.5809312638581%{content: "173";}
+  38.8026607538803%{content: "174";}
+  39.0243902439024%{content: "175";}
+  39.2461197339246%{content: "176";}
+  39.4678492239468%{content: "177";}
+  39.689578713969%{content: "178";}
+  39.9113082039911%{content: "179";}
+  40.1330376940133%{content: "180";}
+  40.3547671840355%{content: "181";}
+  40.5764966740576%{content: "182";}
+  40.7982261640798%{content: "183";}
+  41.019955654102%{content: "184";}
+  41.2416851441241%{content: "185";}
+  41.4634146341463%{content: "186";}
+  41.6851441241685%{content: "187";}
+  41.9068736141907%{content: "188";}
+  42.1286031042128%{content: "189";}
+  42.350332594235%{content: "190";}
+  42.5720620842572%{content: "191";}
+  42.7937915742793%{content: "192";}
+  43.0155210643015%{content: "193";}
+  43.2372505543237%{content: "194";}
+  43.4589800443459%{content: "195";}
+  43.680709534368%{content: "196";}
+  43.9024390243902%{content: "197";}
+  44.1241685144124%{content: "198";}
+  44.3458980044345%{content: "199";}
+  44.5676274944567%{content: "200";}
+  44.7893569844789%{content: "201";}
+  45.011086474501%{content: "202";}
+  45.2328159645232%{content: "203";}
+  45.4545454545454%{content: "204";}
+  45.6762749445676%{content: "205";}
+  45.8980044345897%{content: "206";}
+  46.1197339246119%{content: "207";}
+  46.3414634146341%{content: "208";}
+  46.5631929046562%{content: "209";}
+  46.7849223946784%{content: "210";}
+  47.0066518847006%{content: "211";}
+  47.2283813747227%{content: "212";}
+  47.4501108647449%{content: "213";}
+  47.6718403547671%{content: "214";}
+  47.8935698447893%{content: "215";}
+  48.1152993348114%{content: "216";}
+  48.3370288248336%{content: "217";}
+  48.5587583148558%{content: "218";}
+  48.7804878048779%{content: "219";}
+  49.0022172949001%{content: "220";}
+  49.2239467849223%{content: "221";}
+  49.4456762749444%{content: "222";}
+  49.6674057649666%{content: "223";}
+  49.8891352549888%{content: "224";}
+  50.110864745011%{content: "225";}
+  50.3325942350331%{content: "226";}
+  50.5543237250553%{content: "227";}
+  50.7760532150775%{content: "228";}
+  50.9977827050996%{content: "229";}
+  51.2195121951218%{content: "230";}
+  51.441241685144%{content: "231";}
+  51.6629711751661%{content: "232";}
+  51.8847006651883%{content: "233";}
+  52.1064301552105%{content: "234";}
+  52.3281596452327%{content: "235";}
+  52.5498891352548%{content: "236";}
+  52.771618625277%{content: "237";}
+  52.9933481152992%{content: "238";}
+  53.2150776053213%{content: "239";}
+  53.4368070953435%{content: "240";}
+  53.6585365853657%{content: "241";}
+  53.8802660753879%{content: "242";}
+  54.10199556541%{content: "243";}
+  54.3237250554322%{content: "244";}
+  54.5454545454544%{content: "245";}
+  54.7671840354765%{content: "246";}
+  54.9889135254987%{content: "247";}
+  55.2106430155209%{content: "248";}
+  55.432372505543%{content: "249";}
+  55.6541019955652%{content: "250";}
+  55.8758314855874%{content: "251";}
+  56.0975609756096%{content: "252";}
+  56.3192904656317%{content: "253";}
+  56.5410199556539%{content: "254";}
+  56.7627494456761%{content: "255";}
+  56.9844789356982%{content: "256";}
+  57.2062084257204%{content: "257";}
+  57.4279379157426%{content: "258";}
+  57.6496674057647%{content: "259";}
+  57.8713968957869%{content: "260";}
+  58.0931263858091%{content: "261";}
+  58.3148558758313%{content: "262";}
+  58.5365853658534%{content: "263";}
+  58.7583148558756%{content: "264";}
+  58.9800443458978%{content: "265";}
+  59.2017738359199%{content: "266";}
+  59.4235033259421%{content: "267";}
+  59.6452328159643%{content: "268";}
+  59.8669623059864%{content: "269";}
+  60.0886917960086%{content: "270";}
+  60.3104212860308%{content: "271";}
+  60.532150776053%{content: "272";}
+  60.7538802660751%{content: "273";}
+  60.9756097560973%{content: "274";}
+  61.1973392461195%{content: "275";}
+  61.4190687361416%{content: "276";}
+  61.6407982261638%{content: "277";}
+  61.862527716186%{content: "278";}
+  62.0842572062082%{content: "279";}
+  62.3059866962303%{content: "280";}
+  62.5277161862525%{content: "281";}
+  62.7494456762747%{content: "282";}
+  62.9711751662968%{content: "283";}
+  63.192904656319%{content: "284";}
+  63.4146341463412%{content: "285";}
+  63.6363636363633%{content: "286";}
+  63.8580931263855%{content: "287";}
+  64.0798226164077%{content: "288";}
+  64.3015521064299%{content: "289";}
+  64.523281596452%{content: "290";}
+  64.7450110864742%{content: "291";}
+  64.9667405764964%{content: "292";}
+  65.1884700665185%{content: "293";}
+  65.4101995565407%{content: "294";}
+  65.6319290465629%{content: "295";}
+  65.853658536585%{content: "296";}
+  66.0753880266072%{content: "297";}
+  66.2971175166294%{content: "298";}
+  66.5188470066516%{content: "299";}
+  66.7405764966737%{content: "300";}
+  66.9623059866959%{content: "301";}
+  67.1840354767181%{content: "302";}
+  67.4057649667402%{content: "303";}
+  67.6274944567624%{content: "304";}
+  67.8492239467846%{content: "305";}
+  68.0709534368067%{content: "306";}
+  68.2926829268289%{content: "307";}
+  68.5144124168511%{content: "308";}
+  68.7361419068733%{content: "309";}
+  68.9578713968954%{content: "310";}
+  69.1796008869176%{content: "311";}
+  69.4013303769398%{content: "312";}
+  69.6230598669619%{content: "313";}
+  69.8447893569841%{content: "314";}
+  70.0665188470063%{content: "315";}
+  70.2882483370284%{content: "316";}
+  70.5099778270506%{content: "317";}
+  70.7317073170728%{content: "318";}
+  70.953436807095%{content: "319";}
+  71.1751662971171%{content: "320";}
+  71.3968957871393%{content: "321";}
+  71.6186252771615%{content: "322";}
+  71.8403547671836%{content: "323";}
+  72.0620842572058%{content: "324";}
+  72.283813747228%{content: "325";}
+  72.5055432372502%{content: "326";}
+  72.7272727272723%{content: "327";}
+  72.9490022172945%{content: "328";}
+  73.1707317073167%{content: "329";}
+  73.3924611973388%{content: "330";}
+  73.614190687361%{content: "331";}
+  73.8359201773832%{content: "332";}
+  74.0576496674053%{content: "333";}
+  74.2793791574275%{content: "334";}
+  74.5011086474497%{content: "335";}
+  74.7228381374719%{content: "336";}
+  74.944567627494%{content: "337";}
+  75.1662971175162%{content: "338";}
+  75.3880266075384%{content: "339";}
+  75.6097560975605%{content: "340";}
+  75.8314855875827%{content: "341";}
+  76.0532150776049%{content: "342";}
+  76.274944567627%{content: "343";}
+  76.4966740576492%{content: "344";}
+  76.7184035476714%{content: "345";}
+  76.9401330376936%{content: "346";}
+  77.1618625277157%{content: "347";}
+  77.3835920177379%{content: "348";}
+  77.6053215077601%{content: "349";}
+  77.8270509977822%{content: "350";}
+  78.0487804878044%{content: "351";}
+  78.2705099778266%{content: "352";}
+  78.4922394678487%{content: "353";}
+  78.7139689578709%{content: "354";}
+  78.9356984478931%{content: "355";}
+  79.1574279379153%{content: "356";}
+  79.3791574279374%{content: "357";}
+  79.6008869179596%{content: "358";}
+  79.8226164079818%{content: "359";}
+  80.0443458980039%{content: "360";}
+  80.2660753880261%{content: "361";}
+  80.4878048780483%{content: "362";}
+  80.7095343680705%{content: "363";}
+  80.9312638580926%{content: "364";}
+  81.1529933481148%{content: "365";}
+  81.374722838137%{content: "366";}
+  81.5964523281591%{content: "367";}
+  81.8181818181813%{content: "368";}
+  82.0399113082035%{content: "369";}
+  82.2616407982256%{content: "370";}
+  82.4833702882478%{content: "371";}
+  82.70509977827%{content: "372";}
+  82.9268292682922%{content: "373";}
+  83.1485587583143%{content: "374";}
+  83.3702882483365%{content: "375";}
+  83.5920177383587%{content: "376";}
+  83.8137472283808%{content: "377";}
+  84.035476718403%{content: "378";}
+  84.2572062084252%{content: "379";}
+  84.4789356984473%{content: "380";}
+  84.7006651884695%{content: "381";}
+  84.9223946784917%{content: "382";}
+  85.1441241685139%{content: "383";}
+  85.365853658536%{content: "384";}
+  85.5875831485582%{content: "385";}
+  85.8093126385804%{content: "386";}
+  86.0310421286025%{content: "387";}
+  86.2527716186247%{content: "388";}
+  86.4745011086469%{content: "389";}
+  86.696230598669%{content: "390";}
+  86.9179600886912%{content: "391";}
+  87.1396895787134%{content: "392";}
+  87.3614190687356%{content: "393";}
+  87.5831485587577%{content: "394";}
+  87.8048780487799%{content: "395";}
+  88.0266075388021%{content: "396";}
+  88.2483370288242%{content: "397";}
+  88.4700665188464%{content: "398";}
+  88.6917960088686%{content: "399";}
+  88.9135254988907%{content: "400";}
+  89.1352549889129%{content: "401";}
+  89.3569844789351%{content: "402";}
+  89.5787139689573%{content: "403";}
+  89.8004434589794%{content: "404";}
+  90.0221729490016%{content: "405";}
+  90.2439024390238%{content: "406";}
+  90.4656319290459%{content: "407";}
+  90.6873614190681%{content: "408";}
+  90.9090909090903%{content: "409";}
+  91.1308203991125%{content: "410";}
+  91.3525498891346%{content: "411";}
+  91.5742793791568%{content: "412";}
+  91.796008869179%{content: "413";}
+  92.0177383592011%{content: "414";}
+  92.2394678492233%{content: "415";}
+  92.4611973392455%{content: "416";}
+  92.6829268292676%{content: "417";}
+  92.9046563192898%{content: "418";}
+  93.126385809312%{content: "419";}
+  93.3481152993342%{content: "420";}
+  93.5698447893563%{content: "421";}
+  93.7915742793785%{content: "422";}
+  94.0133037694007%{content: "423";}
+  94.2350332594228%{content: "424";}
+  94.456762749445%{content: "425";}
+  94.6784922394672%{content: "426";}
+  94.9002217294893%{content: "427";}
+  95.1219512195115%{content: "428";}
+  95.3436807095337%{content: "429";}
+  95.5654101995559%{content: "430";}
+  95.787139689578%{content: "431";}
+  96.0088691796002%{content: "432";}
+  96.2305986696224%{content: "433";}
+  96.4523281596445%{content: "434";}
+  96.6740576496667%{content: "435";}
+  96.8957871396889%{content: "436";}
+  97.117516629711%{content: "437";}
+  97.3392461197332%{content: "438";}
+  97.5609756097554%{content: "439";}
+  97.7827050997776%{content: "440";}
+  98.0044345897997%{content: "441";}
+  98.2261640798219%{content: "442";}
+  98.4478935698441%{content: "443";}
+  98.6696230598662%{content: "444";}
+  98.8913525498884%{content: "445";}
+  99.1130820399106%{content: "446";}
+  99.3348115299328%{content: "447";}
+  99.5565410199549%{content: "448";}
+  99.7782705099771%{content: "449";}
+  99.9999999999993%{content: "450";}
+  
+
+}
+/* End Animation 1 */
+
+/* Start Animation 2 */
+:has(a.services.active) #counter .row .col-12:nth-child(2) h5:after {
+  animation-play-state: running;
+}
+
+#counter .row .col-12:nth-child(2) h5::after {
+  content: "25";
+  animation: countertwo;
+  animation-duration: 1s;
+  animation-play-state: paused ;
+}
+
+@keyframes countertwo {
+
+  3.84615384615385%{content: "0";}
+  7.69230769230769%{content: "1";}
+  11.5384615384615%{content: "2";}
+  15.3846153846154%{content: "3";}
+  19.2307692307692%{content: "4";}
+  23.0769230769231%{content: "5";}
+  26.9230769230769%{content: "6";}
+  30.7692307692308%{content: "7";}
+  34.6153846153846%{content: "8";}
+  38.4615384615385%{content: "9";}
+  42.3076923076923%{content: "10";}
+  46.1538461538462%{content: "11";}
+  50%{content: "12";}
+  53.8461538461538%{content: "13";}
+  57.6923076923077%{content: "14";}
+  61.5384615384615%{content: "15";}
+  65.3846153846154%{content: "16";}
+  69.2307692307692%{content: "17";}
+  73.0769230769231%{content: "18";}
+  76.9230769230769%{content: "19";}
+  80.7692307692307%{content: "20";}
+  84.6153846153846%{content: "21";}
+  88.4615384615384%{content: "22";}
+  92.3076923076923%{content: "23";}
+  96.1538461538461%{content: "24";}
+  99.9999999999999%{content: "25";}
+  
+  
+
+}
+/* End Animation 2 */
+
+/* Start Animation 3 */
+:has(a.services.active) #counter .row .col-12:nth-child(3) h5:after {
+  animation-play-state: running;
+}
+
+#counter .row .col-12:nth-child(3) h5::after {
+  content: "550";
+  animation: counterthree;
+  animation-duration: 1s;
+  animation-play-state: paused ;
+}
+
+@keyframes counterthree {
+
+  0.181488203266788%{content: "0";}
+0.362976406533575%{content: "1";}
+0.544464609800363%{content: "2";}
+0.725952813067151%{content: "3";}
+0.907441016333938%{content: "4";}
+1.08892921960073%{content: "5";}
+1.27041742286751%{content: "6";}
+1.4519056261343%{content: "7";}
+1.63339382940109%{content: "8";}
+1.81488203266788%{content: "9";}
+1.99637023593466%{content: "10";}
+2.17785843920145%{content: "11";}
+2.35934664246824%{content: "12";}
+2.54083484573503%{content: "13";}
+2.72232304900182%{content: "14";}
+2.9038112522686%{content: "15";}
+3.08529945553539%{content: "16";}
+3.26678765880218%{content: "17";}
+3.44827586206897%{content: "18";}
+3.62976406533575%{content: "19";}
+3.81125226860254%{content: "20";}
+3.99274047186933%{content: "21";}
+4.17422867513612%{content: "22";}
+4.3557168784029%{content: "23";}
+4.53720508166969%{content: "24";}
+4.71869328493648%{content: "25";}
+4.90018148820327%{content: "26";}
+5.08166969147005%{content: "27";}
+5.26315789473684%{content: "28";}
+5.44464609800363%{content: "29";}
+5.62613430127042%{content: "30";}
+5.8076225045372%{content: "31";}
+5.98911070780399%{content: "32";}
+6.17059891107078%{content: "33";}
+6.35208711433756%{content: "34";}
+6.53357531760435%{content: "35";}
+6.71506352087114%{content: "36";}
+6.89655172413793%{content: "37";}
+7.07803992740471%{content: "38";}
+7.2595281306715%{content: "39";}
+7.44101633393829%{content: "40";}
+7.62250453720508%{content: "41";}
+7.80399274047186%{content: "42";}
+7.98548094373865%{content: "43";}
+8.16696914700544%{content: "44";}
+8.34845735027223%{content: "45";}
+8.52994555353901%{content: "46";}
+8.7114337568058%{content: "47";}
+8.89292196007259%{content: "48";}
+9.07441016333938%{content: "49";}
+9.25589836660617%{content: "50";}
+9.43738656987295%{content: "51";}
+9.61887477313974%{content: "52";}
+9.80036297640653%{content: "53";}
+9.98185117967332%{content: "54";}
+10.1633393829401%{content: "55";}
+10.3448275862069%{content: "56";}
+10.5263157894737%{content: "57";}
+10.7078039927405%{content: "58";}
+10.8892921960073%{content: "59";}
+11.070780399274%{content: "60";}
+11.2522686025408%{content: "61";}
+11.4337568058076%{content: "62";}
+11.6152450090744%{content: "63";}
+11.7967332123412%{content: "64";}
+11.978221415608%{content: "65";}
+12.1597096188748%{content: "66";}
+12.3411978221416%{content: "67";}
+12.5226860254084%{content: "68";}
+12.7041742286751%{content: "69";}
+12.8856624319419%{content: "70";}
+13.0671506352087%{content: "71";}
+13.2486388384755%{content: "72";}
+13.4301270417423%{content: "73";}
+13.6116152450091%{content: "74";}
+13.7931034482759%{content: "75";}
+13.9745916515427%{content: "76";}
+14.1560798548094%{content: "77";}
+14.3375680580762%{content: "78";}
+14.519056261343%{content: "79";}
+14.7005444646098%{content: "80";}
+14.8820326678766%{content: "81";}
+15.0635208711434%{content: "82";}
+15.2450090744102%{content: "83";}
+15.426497277677%{content: "84";}
+15.6079854809438%{content: "85";}
+15.7894736842105%{content: "86";}
+15.9709618874773%{content: "87";}
+16.1524500907441%{content: "88";}
+16.3339382940109%{content: "89";}
+16.5154264972777%{content: "90";}
+16.6969147005445%{content: "91";}
+16.8784029038113%{content: "92";}
+17.0598911070781%{content: "93";}
+17.2413793103448%{content: "94";}
+17.4228675136116%{content: "95";}
+17.6043557168784%{content: "96";}
+17.7858439201452%{content: "97";}
+17.967332123412%{content: "98";}
+18.1488203266788%{content: "99";}
+18.3303085299456%{content: "100";}
+18.5117967332124%{content: "101";}
+18.6932849364791%{content: "102";}
+18.8747731397459%{content: "103";}
+19.0562613430127%{content: "104";}
+19.2377495462795%{content: "105";}
+19.4192377495463%{content: "106";}
+19.6007259528131%{content: "107";}
+19.7822141560799%{content: "108";}
+19.9637023593467%{content: "109";}
+20.1451905626135%{content: "110";}
+20.3266787658802%{content: "111";}
+20.508166969147%{content: "112";}
+20.6896551724138%{content: "113";}
+20.8711433756806%{content: "114";}
+21.0526315789474%{content: "115";}
+21.2341197822142%{content: "116";}
+21.415607985481%{content: "117";}
+21.5970961887478%{content: "118";}
+21.7785843920145%{content: "119";}
+21.9600725952813%{content: "120";}
+22.1415607985481%{content: "121";}
+22.3230490018149%{content: "122";}
+22.5045372050817%{content: "123";}
+22.6860254083485%{content: "124";}
+22.8675136116153%{content: "125";}
+23.0490018148821%{content: "126";}
+23.2304900181489%{content: "127";}
+23.4119782214156%{content: "128";}
+23.5934664246824%{content: "129";}
+23.7749546279492%{content: "130";}
+23.956442831216%{content: "131";}
+24.1379310344828%{content: "132";}
+24.3194192377496%{content: "133";}
+24.5009074410164%{content: "134";}
+24.6823956442832%{content: "135";}
+24.8638838475499%{content: "136";}
+25.0453720508167%{content: "137";}
+25.2268602540835%{content: "138";}
+25.4083484573503%{content: "139";}
+25.5898366606171%{content: "140";}
+25.7713248638839%{content: "141";}
+25.9528130671507%{content: "142";}
+26.1343012704175%{content: "143";}
+26.3157894736843%{content: "144";}
+26.497277676951%{content: "145";}
+26.6787658802178%{content: "146";}
+26.8602540834846%{content: "147";}
+27.0417422867514%{content: "148";}
+27.2232304900182%{content: "149";}
+27.404718693285%{content: "150";}
+27.5862068965518%{content: "151";}
+27.7676950998186%{content: "152";}
+27.9491833030853%{content: "153";}
+28.1306715063521%{content: "154";}
+28.3121597096189%{content: "155";}
+28.4936479128857%{content: "156";}
+28.6751361161525%{content: "157";}
+28.8566243194193%{content: "158";}
+29.0381125226861%{content: "159";}
+29.2196007259529%{content: "160";}
+29.4010889292197%{content: "161";}
+29.5825771324864%{content: "162";}
+29.7640653357532%{content: "163";}
+29.94555353902%{content: "164";}
+30.1270417422868%{content: "165";}
+30.3085299455536%{content: "166";}
+30.4900181488204%{content: "167";}
+30.6715063520872%{content: "168";}
+30.852994555354%{content: "169";}
+31.0344827586207%{content: "170";}
+31.2159709618875%{content: "171";}
+31.3974591651543%{content: "172";}
+31.5789473684211%{content: "173";}
+31.7604355716879%{content: "174";}
+31.9419237749547%{content: "175";}
+32.1234119782215%{content: "176";}
+32.3049001814883%{content: "177";}
+32.486388384755%{content: "178";}
+32.6678765880218%{content: "179";}
+32.8493647912886%{content: "180";}
+33.0308529945554%{content: "181";}
+33.2123411978222%{content: "182";}
+33.393829401089%{content: "183";}
+33.5753176043558%{content: "184";}
+33.7568058076226%{content: "185";}
+33.9382940108894%{content: "186";}
+34.1197822141561%{content: "187";}
+34.3012704174229%{content: "188";}
+34.4827586206897%{content: "189";}
+34.6642468239565%{content: "190";}
+34.8457350272233%{content: "191";}
+35.0272232304901%{content: "192";}
+35.2087114337569%{content: "193";}
+35.3901996370237%{content: "194";}
+35.5716878402904%{content: "195";}
+35.7531760435572%{content: "196";}
+35.934664246824%{content: "197";}
+36.1161524500908%{content: "198";}
+36.2976406533576%{content: "199";}
+36.4791288566244%{content: "200";}
+36.6606170598912%{content: "201";}
+36.842105263158%{content: "202";}
+37.0235934664247%{content: "203";}
+37.2050816696915%{content: "204";}
+37.3865698729583%{content: "205";}
+37.5680580762251%{content: "206";}
+37.7495462794919%{content: "207";}
+37.9310344827587%{content: "208";}
+38.1125226860255%{content: "209";}
+38.2940108892923%{content: "210";}
+38.4754990925591%{content: "211";}
+38.6569872958258%{content: "212";}
+38.8384754990926%{content: "213";}
+39.0199637023594%{content: "214";}
+39.2014519056262%{content: "215";}
+39.382940108893%{content: "216";}
+39.5644283121598%{content: "217";}
+39.7459165154266%{content: "218";}
+39.9274047186934%{content: "219";}
+40.1088929219601%{content: "220";}
+40.2903811252269%{content: "221";}
+40.4718693284937%{content: "222";}
+40.6533575317605%{content: "223";}
+40.8348457350273%{content: "224";}
+41.0163339382941%{content: "225";}
+41.1978221415609%{content: "226";}
+41.3793103448277%{content: "227";}
+41.5607985480945%{content: "228";}
+41.7422867513612%{content: "229";}
+41.923774954628%{content: "230";}
+42.1052631578948%{content: "231";}
+42.2867513611616%{content: "232";}
+42.4682395644284%{content: "233";}
+42.6497277676952%{content: "234";}
+42.831215970962%{content: "235";}
+43.0127041742288%{content: "236";}
+43.1941923774955%{content: "237";}
+43.3756805807623%{content: "238";}
+43.5571687840291%{content: "239";}
+43.7386569872959%{content: "240";}
+43.9201451905627%{content: "241";}
+44.1016333938295%{content: "242";}
+44.2831215970963%{content: "243";}
+44.4646098003631%{content: "244";}
+44.6460980036299%{content: "245";}
+44.8275862068966%{content: "246";}
+45.0090744101634%{content: "247";}
+45.1905626134302%{content: "248";}
+45.372050816697%{content: "249";}
+45.5535390199638%{content: "250";}
+45.7350272232306%{content: "251";}
+45.9165154264974%{content: "252";}
+46.0980036297642%{content: "253";}
+46.2794918330309%{content: "254";}
+46.4609800362977%{content: "255";}
+46.6424682395645%{content: "256";}
+46.8239564428313%{content: "257";}
+47.0054446460981%{content: "258";}
+47.1869328493649%{content: "259";}
+47.3684210526317%{content: "260";}
+47.5499092558985%{content: "261";}
+47.7313974591653%{content: "262";}
+47.912885662432%{content: "263";}
+48.0943738656988%{content: "264";}
+48.2758620689656%{content: "265";}
+48.4573502722324%{content: "266";}
+48.6388384754992%{content: "267";}
+48.820326678766%{content: "268";}
+49.0018148820328%{content: "269";}
+49.1833030852996%{content: "270";}
+49.3647912885663%{content: "271";}
+49.5462794918331%{content: "272";}
+49.7277676950999%{content: "273";}
+49.9092558983667%{content: "274";}
+50.0907441016335%{content: "275";}
+50.2722323049003%{content: "276";}
+50.4537205081671%{content: "277";}
+50.6352087114339%{content: "278";}
+50.8166969147006%{content: "279";}
+50.9981851179674%{content: "280";}
+51.1796733212342%{content: "281";}
+51.361161524501%{content: "282";}
+51.5426497277678%{content: "283";}
+51.7241379310346%{content: "284";}
+51.9056261343014%{content: "285";}
+52.0871143375682%{content: "286";}
+52.268602540835%{content: "287";}
+52.4500907441017%{content: "288";}
+52.6315789473685%{content: "289";}
+52.8130671506353%{content: "290";}
+52.9945553539021%{content: "291";}
+53.1760435571689%{content: "292";}
+53.3575317604357%{content: "293";}
+53.5390199637025%{content: "294";}
+53.7205081669693%{content: "295";}
+53.901996370236%{content: "296";}
+54.0834845735028%{content: "297";}
+54.2649727767696%{content: "298";}
+54.4464609800364%{content: "299";}
+54.6279491833032%{content: "300";}
+54.80943738657%{content: "301";}
+54.9909255898368%{content: "302";}
+55.1724137931036%{content: "303";}
+55.3539019963704%{content: "304";}
+55.5353901996371%{content: "305";}
+55.7168784029039%{content: "306";}
+55.8983666061707%{content: "307";}
+56.0798548094375%{content: "308";}
+56.2613430127043%{content: "309";}
+56.4428312159711%{content: "310";}
+56.6243194192379%{content: "311";}
+56.8058076225047%{content: "312";}
+56.9872958257714%{content: "313";}
+57.1687840290382%{content: "314";}
+57.350272232305%{content: "315";}
+57.5317604355718%{content: "316";}
+57.7132486388386%{content: "317";}
+57.8947368421054%{content: "318";}
+58.0762250453722%{content: "319";}
+58.257713248639%{content: "320";}
+58.4392014519058%{content: "321";}
+58.6206896551725%{content: "322";}
+58.8021778584393%{content: "323";}
+58.9836660617061%{content: "324";}
+59.1651542649729%{content: "325";}
+59.3466424682397%{content: "326";}
+59.5281306715065%{content: "327";}
+59.7096188747733%{content: "328";}
+59.8911070780401%{content: "329";}
+60.0725952813068%{content: "330";}
+60.2540834845736%{content: "331";}
+60.4355716878404%{content: "332";}
+60.6170598911072%{content: "333";}
+60.798548094374%{content: "334";}
+60.9800362976408%{content: "335";}
+61.1615245009076%{content: "336";}
+61.3430127041744%{content: "337";}
+61.5245009074412%{content: "338";}
+61.7059891107079%{content: "339";}
+61.8874773139747%{content: "340";}
+62.0689655172415%{content: "341";}
+62.2504537205083%{content: "342";}
+62.4319419237751%{content: "343";}
+62.6134301270419%{content: "344";}
+62.7949183303087%{content: "345";}
+62.9764065335755%{content: "346";}
+63.1578947368422%{content: "347";}
+63.339382940109%{content: "348";}
+63.5208711433758%{content: "349";}
+63.7023593466426%{content: "350";}
+63.8838475499094%{content: "351";}
+64.0653357531762%{content: "352";}
+64.246823956443%{content: "353";}
+64.4283121597097%{content: "354";}
+64.6098003629765%{content: "355";}
+64.7912885662433%{content: "356";}
+64.9727767695101%{content: "357";}
+65.1542649727769%{content: "358";}
+65.3357531760437%{content: "359";}
+65.5172413793104%{content: "360";}
+65.6987295825772%{content: "361";}
+65.880217785844%{content: "362";}
+66.0617059891108%{content: "363";}
+66.2431941923776%{content: "364";}
+66.4246823956443%{content: "365";}
+66.6061705989111%{content: "366";}
+66.7876588021779%{content: "367";}
+66.9691470054447%{content: "368";}
+67.1506352087115%{content: "369";}
+67.3321234119782%{content: "370";}
+67.513611615245%{content: "371";}
+67.6950998185118%{content: "372";}
+67.8765880217786%{content: "373";}
+68.0580762250454%{content: "374";}
+68.2395644283121%{content: "375";}
+68.4210526315789%{content: "376";}
+68.6025408348457%{content: "377";}
+68.7840290381125%{content: "378";}
+68.9655172413793%{content: "379";}
+69.1470054446461%{content: "380";}
+69.3284936479128%{content: "381";}
+69.5099818511796%{content: "382";}
+69.6914700544464%{content: "383";}
+69.8729582577132%{content: "384";}
+70.05444646098%{content: "385";}
+70.2359346642467%{content: "386";}
+70.4174228675135%{content: "387";}
+70.5989110707803%{content: "388";}
+70.7803992740471%{content: "389";}
+70.9618874773139%{content: "390";}
+71.1433756805806%{content: "391";}
+71.3248638838474%{content: "392";}
+71.5063520871142%{content: "393";}
+71.687840290381%{content: "394";}
+71.8693284936478%{content: "395";}
+72.0508166969146%{content: "396";}
+72.2323049001813%{content: "397";}
+72.4137931034481%{content: "398";}
+72.5952813067149%{content: "399";}
+72.7767695099817%{content: "400";}
+72.9582577132485%{content: "401";}
+73.1397459165152%{content: "402";}
+73.321234119782%{content: "403";}
+73.5027223230488%{content: "404";}
+73.6842105263156%{content: "405";}
+73.8656987295824%{content: "406";}
+74.0471869328491%{content: "407";}
+74.2286751361159%{content: "408";}
+74.4101633393827%{content: "409";}
+74.5916515426495%{content: "410";}
+74.7731397459163%{content: "411";}
+74.954627949183%{content: "412";}
+75.1361161524498%{content: "413";}
+75.3176043557166%{content: "414";}
+75.4990925589834%{content: "415";}
+75.6805807622502%{content: "416";}
+75.862068965517%{content: "417";}
+76.0435571687837%{content: "418";}
+76.2250453720505%{content: "419";}
+76.4065335753173%{content: "420";}
+76.5880217785841%{content: "421";}
+76.7695099818509%{content: "422";}
+76.9509981851176%{content: "423";}
+77.1324863883844%{content: "424";}
+77.3139745916512%{content: "425";}
+77.495462794918%{content: "426";}
+77.6769509981848%{content: "427";}
+77.8584392014515%{content: "428";}
+78.0399274047183%{content: "429";}
+78.2214156079851%{content: "430";}
+78.4029038112519%{content: "431";}
+78.5843920145187%{content: "432";}
+78.7658802177855%{content: "433";}
+78.9473684210522%{content: "434";}
+79.128856624319%{content: "435";}
+79.3103448275858%{content: "436";}
+79.4918330308526%{content: "437";}
+79.6733212341194%{content: "438";}
+79.8548094373861%{content: "439";}
+80.0362976406529%{content: "440";}
+80.2177858439197%{content: "441";}
+80.3992740471865%{content: "442";}
+80.5807622504533%{content: "443";}
+80.76225045372%{content: "444";}
+80.9437386569868%{content: "445";}
+81.1252268602536%{content: "446";}
+81.3067150635204%{content: "447";}
+81.4882032667872%{content: "448";}
+81.6696914700539%{content: "449";}
+81.8511796733207%{content: "450";}
+82.0326678765875%{content: "451";}
+82.2141560798543%{content: "452";}
+82.3956442831211%{content: "453";}
+82.5771324863879%{content: "454";}
+82.7586206896546%{content: "455";}
+82.9401088929214%{content: "456";}
+83.1215970961882%{content: "457";}
+83.303085299455%{content: "458";}
+83.4845735027218%{content: "459";}
+83.6660617059885%{content: "460";}
+83.8475499092553%{content: "461";}
+84.0290381125221%{content: "462";}
+84.2105263157889%{content: "463";}
+84.3920145190557%{content: "464";}
+84.5735027223224%{content: "465";}
+84.7549909255892%{content: "466";}
+84.936479128856%{content: "467";}
+85.1179673321228%{content: "468";}
+85.2994555353896%{content: "469";}
+85.4809437386564%{content: "470";}
+85.6624319419231%{content: "471";}
+85.8439201451899%{content: "472";}
+86.0254083484567%{content: "473";}
+86.2068965517235%{content: "474";}
+86.3883847549903%{content: "475";}
+86.569872958257%{content: "476";}
+86.7513611615238%{content: "477";}
+86.9328493647906%{content: "478";}
+87.1143375680574%{content: "479";}
+87.2958257713242%{content: "480";}
+87.4773139745909%{content: "481";}
+87.6588021778577%{content: "482";}
+87.8402903811245%{content: "483";}
+88.0217785843913%{content: "484";}
+88.2032667876581%{content: "485";}
+88.3847549909248%{content: "486";}
+88.5662431941916%{content: "487";}
+88.7477313974584%{content: "488";}
+88.9292196007252%{content: "489";}
+89.110707803992%{content: "490";}
+89.2921960072588%{content: "491";}
+89.4736842105255%{content: "492";}
+89.6551724137923%{content: "493";}
+89.8366606170591%{content: "494";}
+90.0181488203259%{content: "495";}
+90.1996370235927%{content: "496";}
+90.3811252268594%{content: "497";}
+90.5626134301262%{content: "498";}
+90.744101633393%{content: "499";}
+90.9255898366598%{content: "500";}
+91.1070780399266%{content: "501";}
+91.2885662431933%{content: "502";}
+91.4700544464601%{content: "503";}
+91.6515426497269%{content: "504";}
+91.8330308529937%{content: "505";}
+92.0145190562605%{content: "506";}
+92.1960072595272%{content: "507";}
+92.377495462794%{content: "508";}
+92.5589836660608%{content: "509";}
+92.7404718693276%{content: "510";}
+92.9219600725944%{content: "511";}
+93.1034482758612%{content: "512";}
+93.2849364791279%{content: "513";}
+93.4664246823947%{content: "514";}
+93.6479128856615%{content: "515";}
+93.8294010889283%{content: "516";}
+94.0108892921951%{content: "517";}
+94.1923774954618%{content: "518";}
+94.3738656987286%{content: "519";}
+94.5553539019954%{content: "520";}
+94.7368421052622%{content: "521";}
+94.918330308529%{content: "522";}
+95.0998185117957%{content: "523";}
+95.2813067150625%{content: "524";}
+95.4627949183293%{content: "525";}
+95.6442831215961%{content: "526";}
+95.8257713248629%{content: "527";}
+96.0072595281297%{content: "528";}
+96.1887477313964%{content: "529";}
+96.3702359346632%{content: "530";}
+96.55172413793%{content: "531";}
+96.7332123411968%{content: "532";}
+96.9147005444636%{content: "533";}
+97.0961887477303%{content: "534";}
+97.2776769509971%{content: "535";}
+97.4591651542639%{content: "536";}
+97.6406533575307%{content: "537";}
+97.8221415607975%{content: "538";}
+98.0036297640642%{content: "539";}
+98.185117967331%{content: "540";}
+98.3666061705978%{content: "541";}
+98.5480943738646%{content: "542";}
+98.7295825771314%{content: "543";}
+98.9110707803981%{content: "544";}
+99.0925589836649%{content: "545";}
+99.2740471869317%{content: "546";}
+99.4555353901985%{content: "547";}
+99.6370235934653%{content: "548";}
+99.8185117967321%{content: "549";}
+99.9999999999988%{content: "550";}
+
+  
+
+}
+/* End Animation 3 */
+
+/* Start Animation 4 */
+:has(a.services.active) #counter .row .col-12:last-child h5:after {
+  animation-play-state: running;
+}
+
+#counter .row .col-12:last-child h5::after {
+  content: "48";
+  animation: counterfour;
+  animation-duration: 1s;
+  animation-play-state: paused ;
+}
+
+@keyframes counterfour {
+
+  2.04081632653061%{content: "0";}
+4.08163265306122%{content: "1";}
+6.12244897959184%{content: "2";}
+8.16326530612245%{content: "3";}
+10.2040816326531%{content: "4";}
+12.2448979591837%{content: "5";}
+14.2857142857143%{content: "6";}
+16.3265306122449%{content: "7";}
+18.3673469387755%{content: "8";}
+20.4081632653061%{content: "9";}
+22.4489795918367%{content: "10";}
+24.4897959183674%{content: "11";}
+26.530612244898%{content: "12";}
+28.5714285714286%{content: "13";}
+30.6122448979592%{content: "14";}
+32.6530612244898%{content: "15";}
+34.6938775510204%{content: "16";}
+36.734693877551%{content: "17";}
+38.7755102040816%{content: "18";}
+40.8163265306122%{content: "19";}
+42.8571428571429%{content: "20";}
+44.8979591836735%{content: "21";}
+46.9387755102041%{content: "22";}
+48.9795918367347%{content: "23";}
+51.0204081632653%{content: "24";}
+53.0612244897959%{content: "25";}
+55.1020408163265%{content: "26";}
+57.1428571428571%{content: "27";}
+59.1836734693877%{content: "28";}
+61.2244897959183%{content: "29";}
+63.265306122449%{content: "30";}
+65.3061224489796%{content: "31";}
+67.3469387755102%{content: "32";}
+69.3877551020408%{content: "33";}
+71.4285714285714%{content: "34";}
+73.469387755102%{content: "35";}
+75.5102040816327%{content: "36";}
+77.5510204081633%{content: "37";}
+79.5918367346939%{content: "38";}
+81.6326530612245%{content: "39";}
+83.6734693877551%{content: "40";}
+85.7142857142857%{content: "41";}
+87.7551020408164%{content: "42";}
+89.795918367347%{content: "43";}
+91.8367346938776%{content: "44";}
+93.8775510204082%{content: "45";}
+95.9183673469388%{content: "46";}
+97.9591836734694%{content: "47";}
+100%{content: "48";}
+
+  
+
+}
+/* End Animation 4 */
+
+/* Start Animation */
+
+
+/* End Counter Section  */
+
+/* Start Portoflio section  */
+
+#portoflio .card-hov img {
+  transition: 1s;
+  cursor: pointer;
+}
+
+#portoflio .card-hov .portofolio-pic {
+  overflow: hidden;
+}
+
+#portoflio .card-hov:hover img {
+  transform: scale(1.3);
+}
+
+#portoflio .card-hov .card-body i {
+  font-size: 40px;
+  color: var(--mainColor);
+  cursor: pointer;
+}
+
+.carousel-control-prev-icon {
+  left: -100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-next-icon {
+  right: -100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.modal.fade .modal-dialog {
+  transform-origin: center center;
+}
+
+/* End Portoflio section  */
+
+/* Start Work Section  */
+#work {
+  background-image: url("../images/overlay-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+}
+
+#work .carousel-indicators {
+  position: static;
+}
+
+#work .inner-bg,
+#contact .inner-bg {
+  background-color: rgba(0, 119, 255, 0.7);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+#work .carousel-indicators {
+  position: static;
+}
+
+#work .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* End Work Section  */
+
+/* Start Blog Section  */
+#blog .text-body-secondary img {
+  width: 32px;
+  height: 32px;
+}
+#blog .card-body {
+  position: relative;
+}
+#blog .card .card-body > span {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+#blog .card-footer a {
+  color: gray;
+  transition: 0.3s;
+}
+
+#blog .card-footer a:hover {
+  color: var(--mainColor);
+}
+
+/* End Blog Section  */
+
+/* Start contact section  */
+#contact {
+  background-image: url("../images/overlay-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+}
+
+#contact button {
+  position: relative;
+}
+#contact button::after {
+  content: '';
+  transition: 0.5s;
+}
+#contact button:hover::after {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  background-color: rgba(205, 225, 248, 0.50) ;
+  border-radius: 50vh;
+
+}
+
+#contact .social div {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid var(--mainColor);
+  transition: all 0.5s;
+}
+
+#contact .social div:hover {
+  background-color: var(--mainColor);
+  outline: 5px solid rgb(205, 225, 248);
+}
+
+#contact .social a:hover div  {
+  color: white;
+}
+
+#contact .social a div {
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  color: black;
+}
+
+.contact h2::after {
+  content: '';
+  background-color: var(--mainColor);
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  height: 3px;
+  width: 15%;
+}
+
+/* End contact section  */
+
+/* Start Footer */
+#footer {
+  background-color: #0062D3 ;
+}
+/* End Footer */

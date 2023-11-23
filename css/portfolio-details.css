@@ -1,0 +1,103 @@
+#navbar-example2 {
+  background-color: #4c9df2;
+}
+
+#header {
+  background-image: url("../images/counters-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+}
+
+#header .bg-layer {
+  background-color: rgba(0, 119, 255, 0.7);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+#header {
+  background-image: url("../images/overlay-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  #header {
+    background-image: url("../images/overlay-bg.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+  }
+}
+
+#header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.breadcrumb-item + .breadcrumb-item::before  {
+  color: white;
+}
+
+.breadcrumb-item.active {
+  color: #CDE1F8;
+}
+
+#header .container h3 {
+  font-size: 56px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  #header .container h3 {
+    font-size: 48px;
+  }
+}
+
+/* Start product */
+
+
+#product .carousel-indicators .active {
+  background-color: #4c9df2;
+}
+
+#product .carousel-control-next-icon,
+#product .carousel-control-prev-icon {
+  visibility: hidden;
+}
+
+.carousel-indicators [data-bs-target] {
+  position: static;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #4c9df2;
+  border-radius: 50%;
+  background-color: white;
+  transform: translatey(50px);
+}
+
+#product .col-4 div:first-child h3::before {
+  content: '';
+  height: 2px;
+  background-color: rgba(128, 128, 128, 0.191);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+}
+
+#product .row .col-7.carousel {
+  height: fit-content;
+}
+
+/* End product */

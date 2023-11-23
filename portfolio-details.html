@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevFolio</title>
+  <!-- Start Google Fonts  -->
+  <!-- Start Font Awesome  -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!-- Start BootStrap  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Start Main Style  -->
+  <link rel="stylesheet" href="./css/styleSheel.css">
+  <!-- Start Portfolio Detiles -->
+  <link rel="stylesheet" href="./css/portfolio-details.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -50%"
+  data-bs-smooth-scroll="true" tabindex="0">
+
+  <!-- Start Hero Section  -->
+  <nav id="navbar-example2" class="z-2 fixed-top navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-semibold fs-2" href="./index.html">DevFolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <ul class="navbar-nav nav-pills ms-auto text-uppercase text-white">
+
+          <li class="nav-item">
+            <div></div>
+            <a class="nav-link text-light fw-semibold " aria-current="page" href="#head">head</a>
+          </li>
+          <li class="nav-item mx-3">
+            <div></div>
+            <a class="nav-link text-light fw-semibold " href="#about">about</a>
+          </li>
+          <li class="nav-item mx-3">
+            <div></div>
+            <a class="nav-link text-light fw-semibold" href="#services">services</a>
+          </li>
+          <li class="nav-item mx-3 counter">
+            <div></div>
+            <a class="nav-link text-light fw-semibold services" href="#counter">counter</a>
+          </li>
+          <li class="nav-item mx-3">
+            <div></div>
+            <a class="nav-link text-light fw-semibold " href="#portoflio">work</a>
+          </li>
+          <li class="nav-item mx-3">
+            <div></div>
+            <a class="nav-link text-light fw-semibold " href="#blog">blog</a>
+          </li>
+          <!-- Start Drop Down  -->
+          <li class="nav-item mx-3 dropdown fw-semibold">
+            <div></div>
+            <a class="nav-link text-uppercase text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <span class="fw-semibold">Drop down</span><span class="ms-1 fs-6 fw-bold"><i
+                  class="bi bi-chevron-down"></i></span>
+            </a>
+            <ul class="dropdown-menu nav-item">
+              <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
+              <li class="nav-item dropend">
+                <a class="nav-link text-capitalize text-dark text-decoration-none" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="ps-2 pe-4">Drop down</span><span class="ms-1 fs-6 fw-bold"><i
+                      class="bi bi-chevron-right"></i></span>
+                </a>
+                <ul class="dropdown-menu nav-item">
+                  <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
+                  <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
+                  <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
+                  <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
+                  <li><a class="dropdown-item" href="#">Drop Down 4</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
+              <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
+              <li><a class="dropdown-item" href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <!-- End Drop down  -->
+          <li class="nav-item mx-3">
+            <div></div>
+            <a class="nav-link text-light fw-semibold " href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Start Head Section -->
+  <section id="header">
+    <div class="container">
+      <div class="bg-layer"></div>
+      <h3>PORTFOLIO DETAILS</h3>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb ">
+          <li class="breadcrumb-item"><a class=" text-white text-decoration-none" href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  <!-- End Head Section -->
+
+  <!-- Strat Product Section  -->
+  <section id="product" class="bg-light p-5">
+    <div class="container">
+      <div class="row g-5 ">
+        <div class="col-12 col-lg-8 mb-4 mb-lg-0 carousel p-0 ">
+          <div id="detiles-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/portfolio-details-1.jpg" class="d-block w-100" alt="portfolio-details">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/portfolio-details-2.jpg" class="d-block w-100" alt="portfolio-details">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/portfolio-details-3.jpg" class="d-block w-100" alt="portfolio-details">
+              </div>
+            </div>
+            <div class="carousel-indicators m-0">
+              <button type="button" data-bs-target="#detiles-carousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#detiles-carousel" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#detiles-carousel" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#detiles-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#detiles-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="mb-4 shadow-sm p-3">
+            <h3 class="position-relative pb-4">Project information</h3>
+            <p class="text-muted pt-2"><span class="fw-semibold">Category: </span> Web design</p>
+            <p class="text-muted"><span class="fw-semibold">Client: </span> ASU Company</p>
+            <p class="text-muted"><span class="fw-semibold">Project date:</span> 01 March, 2020</p>
+            <p class="text-muted"><span class="fw-semibold">Project URL: </span> www.example.com</p>
+          </div>
+          <div class=" p-3">
+            <h3>This is an example of portfolio detail</h3>
+            <p class="text-muted">Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
+              Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia
+              accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt
+              eius.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Product Section  -->
+
+  <!-- Start Footer Sction -->
+  <section id="footer">
+    <div class="container py-4 mb-0 text-light text-center">
+      <p class="pt-2 mb-1">&copy; Copyright <span class="fw-bold">DevFolio</span>. All Rights Reserved</p>
+      <p class="pb-2 mb-0">Designed by <a href="https://bootstrapmade.com/"
+          class="text-decoration-none text-light">BootstrapMade</a></p>
+    </div>
+  </section>
+  <!-- End Footer Sction -->
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
